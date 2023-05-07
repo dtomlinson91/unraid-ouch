@@ -3,7 +3,7 @@
   <!ENTITY name       "unraid-ouch">
   <!ENTITY author     "dtomlinson">
   <!ENTITY org        "dtomlinson91">
-  <!ENTITY version    "0.3.1">
+  <!ENTITY version    "0.4.1">
   <!ENTITY gitURL     "https://github.com/&org;/&name;">
   <!ENTITY pluginURL  "&gitURL;/raw/main/&name;.plg">
   <!ENTITY releaseURL "&gitURL;/releases/download/&version;/&name;-&version;.txz">
@@ -14,6 +14,10 @@
 <PLUGIN  name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" min="6.8.3">
 
 <CHANGES>
+
+### 2023-05-07
+
+- Update ouch to 0.4.1
 
 ### 2022-05-15
 
