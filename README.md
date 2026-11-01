@@ -1,14 +1,19 @@
-# ouch
+# unraid-ouch
 
-This is the repository for the unraid ouch plugin.
+An Unraid plugin that installs ouch ([upstream](https://github.com/ouch-org/ouch)).
 
-<img src="https://git.panaetius.co.uk/dtomlinson91/unraid-ouch/raw/branch/main/assets/unraid-ouch.png"/>
+## Install
 
-ouch stands for Obvious Unified Compression Helper and is a CLI tool to help you compress and decompress files of several formats.
+In the Unraid web UI, go to **Plugins > Install Plugin** and paste this URL:
 
-For more information see the [ouch repository](https://github.com/ouch-org/ouch).
-## dev
+```
+https://github.com/dtomlinson91/unraid-ouch/raw/main/unraid-ouch.plg
+```
 
-Drone builds the plugin source using cargo on a new tag creation.
+## Release
 
-Tag versions follow rip releases.
+The `release` workflow uses the shared workflow in [unraid-plugin-template](https://github.com/dtomlinson91/unraid-plugin-template).
+It runs every Monday, and it releases a new plugin version when upstream has a new release.
+To release by hand, run the workflow from the **Actions** tab.
+
+The plugin settings are in `plugin.conf`. The text for the Unraid Plugins page is in `description.md`.
